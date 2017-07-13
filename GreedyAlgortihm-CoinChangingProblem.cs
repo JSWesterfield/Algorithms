@@ -6,8 +6,16 @@ class chapter17 {
 			if((origAmount % 0.25) < origAmount) {
 				coin[3] = {int}(origAmount / 0.25);
 				remainAmount = origAmount % 0.25;
-				origAmount = remainAmount
+				origAmount = remainAmount;
 			}
+			
+			if((origAmount % 0.1) < origAmount) {
+				coins[2] = (int)(origAmount / 0.1);
+				remainAmount = origAmount % 0.1;
+				origAmount = remainAmount;
+			}
+			
+		
 	}
 	
 }
