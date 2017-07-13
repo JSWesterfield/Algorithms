@@ -25,6 +25,17 @@ class chapter17 {
 			coins[0] = (int)(origAmount / 0.01);
 			remainAmount = origAmount % 0.01;
 		}
+		
+		static void showChange(int[]) arr) {
+			if(arr[3] > 0)
+				Console.WriteLine("Number of quarters: " + arr[3]);
+			if(arr[2] > 0)
+				Console.WriteLine("Number of dimes: " + arr[2]);
+			if(arr[1] > 0)
+				Console.WriteLine("Number of nickels: " + arr[1]);
+			if(arr[0] > 0)
+				Console.WriteLine("Number of pennies: " + arr[0]);
+		}
 	}
 	
 	
