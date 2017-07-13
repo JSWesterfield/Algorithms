@@ -43,6 +43,8 @@ class chapter17 {
 			double remainAmount = 0.0;
 			int[] coins = new int[4];
 			MakeChange(origAmount, remainAmount, coins);
+				Console.log("The best way to change " + toChange + " cents is: ");
+				ShowChange(coins);
 		}
 	}
 	
