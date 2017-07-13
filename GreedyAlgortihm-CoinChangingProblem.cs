@@ -36,6 +36,14 @@ class chapter17 {
 			if(arr[0] > 0)
 				Console.WriteLine("Number of pennies: " + arr[0]);
 		}
+		
+		static void Main() {
+			double origAmount = 0.63;
+			double toChange = origAmount;
+			double remainAmount = 0.0;
+			int[] coins = new int[4];
+			MakeChange(origAmount, remainAmount, coins);
+		}
 	}
 	
 	
