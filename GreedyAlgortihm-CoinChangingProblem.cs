@@ -1,6 +1,6 @@
 using Systeml 
 
-class chapter17 {
+class CoinChange {
 	static void MakeChange(double origAmount, double remainAmount, int[] coins) {
 		
 		if((origAmount % 0.25) < origAmount) {
