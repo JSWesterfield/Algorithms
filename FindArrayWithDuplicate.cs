@@ -10,11 +10,17 @@ namespace Coding Algorithms
 	// Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
 	public static class ArrayDuplicates
 	{
-		Dictionary<int, int> d = new Dictionary<int, int>();
-		foreach (int i in x)
+		public static bool ContainsDuplicates(params int[] x)
 		{
-			if (d.ContainsKey(i))
-				
+			Dictionary<int, int> d = new Dictionary<int, int>();
+			foreach (int i in x)
+			{
+				if (d.ContainsKey(i))
+					return true;
+				else
+					d.Add(i, 1);
+			}
+			return false;
 		}
 	}
 }
